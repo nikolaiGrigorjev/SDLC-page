@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>SDLC</title>
+  </head>
+    
+  <body>
+<h1>SDLC</h1>
+<p>Sofrware Development Life Cycle</p>
+<ul>
+  <button class="accordion">Planning and Requirement analysis</button>
+<div class="panel">
+  <p>Requirements analysis and planning are the keys to the success of an implementation.</p>
+</div>
+  
+    <button class="accordion">Defining requirements</button>
+<div class="panel">
+  <p>The Requirements Definition Phase of the SDLC includes the scope of work necessary to define, analyze and document business and end-user requirements.</p>
+</div>
+  
+    <button class="accordion">Designing the Product Architecture</button>
+<div class="panel">
+  <p>This often is called the design phase of the SDLC life cycle. ... A thoroughly designed approach has to define all the architectural modules of the product along with its communication and data flow representation with external third party software modules if used.</p>
+</div>
+  
+  
+      <button class="accordion">Software development</button>
+<div class="panel">
+  <p>Software development refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software.</p>
+</div>
+  
+        <button class="accordion">Testing</button>
+<div class="panel">
+  <p>The testing phase of the software development lifecycle (SDLC) is where you focus on investigation and discovery.</p>
+</div>
+        <button class="accordion">Deployment in the Market and Maintenance</button>
+<div class="panel">
+  <p>The deployment phase is the final phase of the software development life cycle (SDLC) and puts the product into production. ... This means that the product is ready to be used in a real environment by all end users of the product.</p>
+</div>
+</ul>
+ 
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: lime; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>    
+</html>
